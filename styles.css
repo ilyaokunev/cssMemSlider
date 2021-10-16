@@ -58,14 +58,15 @@ width: 100%;
  p {
     font-size: 32px;
     width: fit-content;
-    margin-top: 20px;
-transition: all 0.8s ease;
+    margin-top: 1%;
+transition: all 0.6s ease-out;
 text-transform: uppercase;
 letter-spacing: 2px;
+transform: translateX(50%);
 }
 
 .labels {
-    margin-top: 20px;
+    margin-top: 1%;
     max-height: 50px;
      margin-left: 75%;
      margin-right: 5%;
@@ -125,6 +126,15 @@ background-color: transparent;
     transform: translateX(-444%);
 }
 
+
+#i1:checked ~ .img__window > .img__track> .slide > #p1,
+#i2:checked ~ .img__window > .img__track> .slide > #p2,
+#i3:checked ~ .img__window > .img__track> .slide > #p3,
+#i4:checked ~ .img__window > .img__track> .slide > #p4,
+#i5:checked ~ .img__window > .img__track> .slide > #p5 {
+    transform: translateX(0%);
+}
+
 #i1:checked ~ .labels > label[for="i1"] >.circle,
 #i2:checked ~ .labels > label[for="i2"] >.circle,
 #i3:checked ~ .labels > label[for="i3"] >.circle,
@@ -145,7 +155,7 @@ body {
 }
 
     .task__wrap {
-        margin-top: 22vh;
+        margin-top: 20vh;
         width: 85vw;
         height: 45vh;
     }
