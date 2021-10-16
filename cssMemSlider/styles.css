@@ -145,7 +145,7 @@ background-color: transparent;
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
     
 body {
     background-image: url("img/backgrounds.jpg");
@@ -157,11 +157,11 @@ body {
     .task__wrap {
         margin-top: 20vh;
         width: 85vw;
-        height: 45vh;
+        height: 50vh;
     }
 
     .img__window {
-        height: 60%;
+        height: 70%;
     }
 
     p {
