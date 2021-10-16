@@ -55,48 +55,54 @@ width: 100%;
 
 }
 
-.slide p {
+ p {
     font-size: 32px;
     width: fit-content;
     margin-top: 20px;
 transition: all 0.8s ease;
-margin-left: 5%;
 text-transform: uppercase;
+letter-spacing: 2px;
 }
 
 .labels {
     margin-top: 20px;
-    height: 50px;
+    max-height: 50px;
      margin-left: 75%;
      margin-right: 5%;
      text-align: center;
 display: flex;
 align-items: center;
-justify-content: space-evenly;
+justify-content: flex-end;
     }
 
 label {
+padding: 10px;
+background-color: transparent;
+}
+
+.circle {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     border: 3px solid white;
-    margin: 10px;
     transition: all 0.3s ease;
     opacity: 0.7;
-
 }
-label:hover {
+label:hover .circle {
     cursor: pointer;
     border: 3px solid gold;
 }
 
-label:active {
+label:hover {
+    cursor: pointer;
+}
+
+label:active .circle {
 background-color: transparent;
     cursor: pointer;
     opacity: 1;
     outline: 3px solid gold;
 }
-
 
 
 #i1:checked ~ .img__window > .img__track >.slide {
@@ -119,11 +125,76 @@ background-color: transparent;
     transform: translateX(-444%);
 }
 
-#i1:checked ~ .labels > label[for="i1"],
-#i2:checked ~ .labels > label[for="i2"],
-#i3:checked ~ .labels > label[for="i3"],
-#i4:checked ~ .labels > label[for="i4"],
-#i5:checked ~ .labels > label[for="i5"] {
+#i1:checked ~ .labels > label[for="i1"] >.circle,
+#i2:checked ~ .labels > label[for="i2"] >.circle,
+#i3:checked ~ .labels > label[for="i3"] >.circle,
+#i4:checked ~ .labels > label[for="i4"] >.circle,
+#i5:checked ~ .labels > label[for="i5"] >.circle {
     background-color: white;
     opacity: 1;
+}
+
+
+@media screen and (max-width: 320px) {
+    
+body {
+    background-image: url("img/backgrounds.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+    .task__wrap {
+        margin-top: 22vh;
+        width: 85vw;
+        height: 45vh;
+    }
+
+    .img__window {
+        height: 60%;
+    }
+
+    p {
+        max-width: 150px;
+        font-size: 8px;
+        width: fit-content;
+        margin-top: 32px;
+    text-transform: uppercase;
+    }
+    
+    .labels {
+        max-height: 18px;
+ margin: 0 auto;
+ margin-top: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        padding: 3px;
+    }
+
+
+    .circle {
+        max-height: 10px;
+        max-width: 10px;
+        border-radius: 50%;
+        border: 1px solid white;
+        transition: all 0.3s ease;
+        opacity: 0.7;
+    }
+
+
+    label:hover .circle {
+        border: 1px solid gold;
+    }
+    
+    
+    label:active .circle {
+        outline: 1px solid gold;
+    }
+
+
 }
