@@ -7,7 +7,8 @@
 
 
 body {
-    background-color:rgba(95, 103, 109, 0.815);
+background-image: url("img/background.jpg");
+background-size: cover;
 }
 
 
@@ -28,7 +29,7 @@ display: none;
 }
 
 .img__window {
-    margin-top: 3gi%;
+    margin-top: 3%;
     width: 100%;
     height: 80%;
 }
