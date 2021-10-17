@@ -56,8 +56,9 @@ width: 100%;
 }
 
  p {
-    font-size: 32px;
+    font-size: 2em;
     width: fit-content;
+    max-width: 60%;
     margin-top: 1%;
 transition: all 0.6s ease-out;
 text-transform: uppercase;
@@ -67,7 +68,6 @@ transform: translateX(50%);
 
 .labels {
     margin-top: 1%;
-    max-height: 50px;
      margin-left: 75%;
      margin-right: 5%;
      text-align: center;
@@ -77,13 +77,14 @@ justify-content: flex-end;
     }
 
 label {
-padding: 10px;
+    height: 100%;
+padding: 4%;
 background-color: transparent;
 }
 
 .circle {
-    height: 20px;
-    width: 20px;
+height: 1.8vh;
+width: 1.8vh;
     border-radius: 50%;
     border: 3px solid white;
     transition: all 0.3s ease;
@@ -144,6 +145,26 @@ background-color: transparent;
     opacity: 1;
 }
 
+@media screen and (max-width: 1024px) {
+
+    .task__wrap {
+        height: 70vh;
+    }
+
+.slide img {
+    height: auto;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .task__wrap {
+        height: 60vh;
+    }
+    
+}
+
+
 
 @media screen and (max-width: 420px) {
     
@@ -165,25 +186,29 @@ body {
     }
 
     p {
-        max-width: 150px;
-        font-size: 8px;
+        max-width: 50%;
+        font-size: 0.5rem;
         width: fit-content;
-        margin-top: 32px;
+        margin-top: 2rem;
     text-transform: uppercase;
     }
     
     .labels {
         max-height: 18px;
  margin: 0 auto;
- margin-top: 10px;
+ margin-top: 1.7vh;  
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    .slide img {
+        height: 100%;
+    }
+
     label {
-        padding: 3px;
+        padding: 1.2%;
     }
 
 
