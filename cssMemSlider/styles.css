@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
-
 }
-
 
 body {
 background-image: url("img/background.jpg");
@@ -147,7 +145,7 @@ background-color: transparent;
 
 @media screen and (max-width: 1024px) {
 
-    .task__wrap {
+.task__wrap {
         height: 70vh;
     }
 
@@ -156,7 +154,7 @@ background-color: transparent;
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .task__wrap {
         height: 60vh;
